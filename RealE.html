@@ -1,0 +1,55 @@
+<!-- www.graphmagnet.com-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Graphmagnet</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>  
+    <script src="Java/selector.js" defer></script>
+    <script src="Java/re_monthly.js" defer></script>
+    <script src="Java/re_yearly.js" defer></script>
+    <script src="Java/re_doubleStackedBarChart.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <span class="logo-text">Graphmagnet</span>
+            <img class="logo" src="images/logo2.jpg" >
+        </div>  
+        <nav>
+            <ul class="nav_links">
+                <li><a href="Home.html" id="homeLink">Home</a></li>
+                <li><a href="RealE.html" id="RealELink">Real Estates Sales</a></li>
+                <li><a href="About.html" id="aboutLink">About</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button>Contact</button></a>  
+    </header>
+    <div>
+        <h1>Turkey Real Estate Sales Report</h1> 
+        <br> <!-- Add a line break for spacing -->
+        <p class="realestate_intro-paragraph">
+            Welcome to the Turkey Real Estate Sales Report, your comprehensive guide to the latest trends and statistics 
+            in the Turkish real estate market. Gain valuable insights into the dynamics of property transactions,
+            <br> market trends, and the overall landscape. Whether you're a homebuyer, investor, or industry professional, our reports 
+            empower you with the knowledge needed to make informed decisions. Explore the data, discover
+            <br> patterns, and stay ahead in the evolving real estate sector.
+        </p>
+        <br> <!-- Add a line break for spacing -->
+        <h3>Yearly Number of Home Sales from 2013</h3> 
+        <canvas class="java-plot" id="re_yearly" width="1000" height="250"></canvas>
+        <h3>Monthly Number of Home Sales for Last Four Years</h3> 
+        <canvas class="java-plot" id="re_monthly" width="1000" height="250"></canvas>
+        <h3>2023 Monthly Number of Home Sales by types</h3> 
+        <canvas class="java-plot" id="re_doubleStackedBarChart" width="1000" height="250"></canvas>
+
+
+    </div>
+</body>
+</html>
+ 
+ 
